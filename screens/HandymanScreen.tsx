@@ -1,16 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, FlatList, Image } from 'react-native';
 
-// Define the type for handyman data, including image URL
 interface Handyman {
   id: string;
   name: string;
   expertise: string;
   rating: number;
-  imageUrl: string; // New field for handyman's image
+  imageUrl: string;
 }
 
-// Sample data with proper type annotation, including image URL
 var emptyPfp = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'
 const handymenData: Handyman[] = [
   { id: '1', name: 'John Doe', expertise: 'Plumbing', rating: 4.5, imageUrl: emptyPfp },
@@ -20,7 +18,6 @@ const handymenData: Handyman[] = [
 ];
 
 const HandymanScreen = () => {
-  // Render function with typing for the 'item' argument
   const renderHandyman = ({ item }: { item: Handyman }) => (
     <View style={styles.handymanCard}>
       <View style={styles.textContainer}>
@@ -66,17 +63,17 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 5,
-    flexDirection: 'row', // Align children horizontally
-    alignItems: 'center', // Vertically center the content
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   textContainer: {
-    flex: 1, // This ensures the text section takes available space
-    paddingRight: 10, // Space between text and image
+    flex: 1,
+    paddingRight: 10,
   },
   handymanImage: {
     width: 80,
     height: 80,
-    borderRadius: 40, // Circular image
+    borderRadius: 40,
   },
   handymanName: {
     fontSize: 18,

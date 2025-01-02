@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
 
-// Define the type for tutorial data
 interface Tutorial {
   id: string;
   title: string;
@@ -9,7 +8,6 @@ interface Tutorial {
   duration: string;
 }
 
-// Sample data with proper type annotation
 const tutorialsData: Tutorial[] = [
   { id: '1', title: 'How to Install a Faucet', difficulty: 'Easy', duration: '30 minutes' },
   { id: '2', title: 'How to Fix a Leaky Pipe', difficulty: 'Medium', duration: '1 hour' },
@@ -18,7 +16,6 @@ const tutorialsData: Tutorial[] = [
 ];
 
 const TutorialsScreen = () => {
-  // Render function with typing for the 'item' argument
   const renderTutorial = ({ item }: { item: Tutorial }) => (
     <View style={styles.tutorialCard}>
       <Text style={styles.tutorialTitle}>{item.title}</Text>

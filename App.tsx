@@ -3,15 +3,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 
-// Importing Screens
+// Importing da screens
 import HomeScreen from './screens/HomeScreen';
 import HandymanScreen from './screens/HandymanScreen';
 import ToolRentalScreen from './screens/ToolRentalScreen';
 import TutorialsScreen from './screens/TutorialsScreen';
 
-import { RootStackParamList } from './types'; // Import the types here
+import { RootStackParamList } from './types';
 
-const Tab = createBottomTabNavigator<RootStackParamList>(); // Type the Tab navigator
+const Tab = createBottomTabNavigator<RootStackParamList>();
 
 export default function App() {
   return (

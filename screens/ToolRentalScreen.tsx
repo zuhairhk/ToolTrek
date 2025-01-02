@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
 
-// Define the type for tool data
 interface Tool {
   id: string;
   name: string;
@@ -9,7 +8,6 @@ interface Tool {
   price: string;
 }
 
-// Sample data with proper type annotation
 const toolsData: Tool[] = [
   { id: '1', name: 'Power Drill', description: 'Cordless power drill for home use', price: '$20/day' },
   { id: '2', name: 'Chainsaw', description: 'Gas-powered chainsaw for heavy-duty cutting', price: '$30/day' },
@@ -18,7 +16,6 @@ const toolsData: Tool[] = [
 ];
 
 const ToolRentalScreen = () => {
-  // Render function with typing for the 'item' argument
   const renderTool = ({ item }: { item: Tool }) => (
     <View style={styles.toolCard}>
       <Text style={styles.toolName}>{item.name}</Text>

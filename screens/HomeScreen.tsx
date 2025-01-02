@@ -2,14 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useNavigation } from '@react-navigation/native';
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs'; // Import the correct type
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { RootStackParamList } from '../types';
 
-import { RootStackParamList } from '../types'; // Import the navigation types
-
-type HomeScreenNavigationProp = BottomTabNavigationProp<RootStackParamList, 'Home'>; // Use BottomTabNavigationProp here
+type HomeScreenNavigationProp = BottomTabNavigationProp<RootStackParamList, 'Home'>;
 
 export default function HomeScreen() {
-  const navigation = useNavigation<HomeScreenNavigationProp>(); // Type the navigation prop
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
     <View style={styles.container}>
@@ -27,7 +26,7 @@ export default function HomeScreen() {
         <Text style={styles.ctaText}>Get started with ToolTrek now</Text>
         <Button
           title="Browse Handymen"
-          onPress={() => navigation.navigate('Handyman')} // This should now work correctly
+          onPress={() => navigation.navigate('Handyman')}
         />
       </View>
     </View>
