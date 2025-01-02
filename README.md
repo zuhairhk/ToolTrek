@@ -7,7 +7,7 @@ ToolTrek is a mobile app built using React Native and React Navigation. It helps
     Browse Handymen: Discover verified handymen available for various tasks around your home.
     Tool Rental: Rent tools for your home projects.
     Tutorials: Access helpful tutorials on DIY projects.
-    User Authentication: Secure login for personalized experiences (if implemented).
+    User Authentication: WIP
 
 ## Screens
 
@@ -22,7 +22,7 @@ To get started with the project:
 
     Clone the repository:
 
-git clone https://github.com/yourusername/tooltrek.git
+git clone https://github.com/zuhairhk/tooltrek.git
 
 Navigate into the project directory:
 
@@ -40,21 +40,6 @@ Alternatively, you can run it on an Android or iOS simulator with:
 
     npm run android   # For Android
     npm run ios       # For iOS
-
-## Dependencies
-
-    React Native: A framework for building native apps using React.
-    React Navigation: For navigation between screens.
-    Expo: A framework and platform for universal React applications (if using Expo).
-    React Native Screens: Optimizes navigation performance.
-    React Native Safe Area Context: Manages safe area boundaries in apps.
-
-## Usage
-
-    Home Screen: The entry point of the app. Allows navigation to the Handyman, Tool Rental, and Tutorials screens.
-    Handyman Screen: Lists available handymen. Users can explore handyman profiles.
-    Tool Rental Screen: Browse and rent tools.
-    Tutorials Screen: View tutorials for DIY projects.
 
 ## Contributing
 
